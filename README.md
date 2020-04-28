@@ -1,2 +1,2 @@
 # alfredmyrne.github.io
-hemsida
+Hej! Vad kul att du är nyfiken på detta projekt.
