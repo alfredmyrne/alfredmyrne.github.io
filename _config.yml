@@ -1,8 +1,8 @@
 # Site settings
-title: Modern Blog V2
-description: Modern-Blog A Elegant template for Jekyll
+title: projekt wip
+description: zoot zonkad
 keywords: Modern, Blogging, Fun
-author: Nadun
+author: Guy De Bored
 #baseurl: "./_site" # the subpath of your site, e.g. /blog/
 url: "alfredmyrne.github.io" # the base hostname & protocol for your site
 gems: [jekyll-paginate,jekyll-seo-tag,jekyll-sitemap]
