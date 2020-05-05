@@ -1,7 +1,7 @@
 ---
-title:  "I scream"
-subtitle: "But do you scream?"
-author: "Mr N"
+title:  "testar"
+subtitle: "detta är ett glasstest"
+author: "Chad"
 avatar: "img/authors/nadun.jpg"
 image: "img/e.jpg"
 date:   2015-04-24 12:12:12
