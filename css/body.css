@@ -29,8 +29,6 @@ body {
 	color: #3b393d;
 	background: #f0f0f0;
 	background-image: url('/img/background.png');
-
-	height: 100%;
 	margin: 0;
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
@@ -89,7 +87,7 @@ a:focus {
 .center{
 width: 50%;
 margin: auto;
-margin-top: 25%;
+margin-top: 15%;
 border: 6px solid #abd4a9;
 opacity: 0.95;
 background-color: white;
