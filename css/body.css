@@ -28,12 +28,22 @@ body {
 	line-height: 1.5;
 	color: #3b393d;
 	background: #f0f0f0;
-	background-image: url('{{ site.baseurl }}img/background.png');
-	height: 100%
+	background-image: url('/img/background.png');
+
+	height: 100%;
+	margin: 0;
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-y: scroll;
+	/* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+html {
+	height: 100%;
+	margin: 0;
 }
 
 body.body--hidden {
@@ -60,6 +70,52 @@ a {
 a:hover,
 a:focus {
 	color: #3b393d;
+}
+
+.bg {
+
+  background-image: url('/img/background.png');
+
+  /* Full height */
+  height: 100%;
+	margin: 0;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center{
+width: 50%;
+margin: auto;
+margin-top: 25%;
+border: 6px solid #abd4a9;
+opacity: 0.95;
+background-color: white;
+text-align: center;
+
+}
+
+.center p{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.topright {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 18px;
+
+}
+
+.centerunder {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 25%;
+	padding-top: 3%;
+	text-align: center;
 }
 
 .demo-2 a {
@@ -130,6 +186,7 @@ a:focus {
 	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
 	transform: rotate3d(0, 0, 1, 22.5deg);
 }
+
 
 .codrops-icon {
 	display: inline-block;
