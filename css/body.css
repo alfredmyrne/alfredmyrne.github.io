@@ -94,18 +94,22 @@ a:focus {
 #sarah{
 	background-image: url('/img/sarah.jpg');
 	border: 6px solid #abd4a9;
+	margin-left: 30%;
+	margin-top: 10%;
 }
 
 #felix{
 	background-image: url('/img/felix.jpg');
 	border: 6px solid #c6cae8;
-	margin-left: 50%;
+	margin-right: 30%;
 	margin-top: 10%;
 }
 
 #nicole{
 	background-image: url('/img/nicole.jpg');
 	border: 6px solid #fddbb8;
+	margin-left: 50%;
+	margin-bottom: 10%;
 }
 
 .center{
