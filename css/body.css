@@ -95,8 +95,7 @@ a:focus {
 	background-repeat: no-repeat;
   	background-size: cover;
 	border: 6px solid #abd4a9;
-	margin-left: 30%;
-	margin-top: 10%;
+	
 }
 
 #felix {
@@ -105,8 +104,6 @@ a:focus {
   	background-size: cover;
 	border: 6px solid #c6cae8;
 	float: right;
-	margin-right: 30%;
-	margin-top: 10%;
 }
 
 #nicole {
@@ -114,8 +111,7 @@ a:focus {
 	background-repeat: no-repeat;
   	background-size: cover;
 	border: 6px solid #fddbb8;
-	margin-left: 50%;
-	margin-bottom: 10%;
+	
 }
 
 .characterBox {
@@ -127,7 +123,7 @@ a:focus {
 .center{
 	width: 50%;
 	margin: auto;
-	margin-top: 15%;
+	margin-top: 10%;
 	border: 6px solid #abd4a9;
 	opacity: 0.95;
 	background-color: white;
@@ -245,6 +241,8 @@ a:focus {
 	margin: 0 5px;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
+
+	speak: none;
 }
 
 .codrops-icon--drop:before {
