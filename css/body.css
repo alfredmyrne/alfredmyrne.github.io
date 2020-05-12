@@ -31,12 +31,11 @@ body {
 	background-image: url('/img/background.png');
 	margin: 0;
 	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow-y: scroll;
-	/* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 html {
@@ -71,52 +70,63 @@ a:focus {
 }
 
 .bg {
+	background-image: url('/img/background.png');
 
-  background-image: url('/img/background.png');
+	/* Full height */
+	height: 100%;
+		margin: 0;
 
-  /* Full height */
-  height: 100%;
-	margin: 0;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.cirkel{
-	  background: lightblue;
+.cirkel {
+	background: lightblue;
     border-radius: 50%;
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
 }
 
-#sarah{
+/* Character styling IDs */
+#sarah {
 	background-image: url('/img/sarah.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
 	border: 6px solid #abd4a9;
 }
 
-#felix{
+#felix {
 	background-image: url('/img/felix.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
 	border: 6px solid #c6cae8;
-	margin-left: 50%;
-	margin-top: 10%;
+	float: right;
 }
 
-#nicole{
+#nicole {
 	background-image: url('/img/nicole.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
 	border: 6px solid #fddbb8;
+	float: left;
+}
+
+.characterBox {
+	width: 50%;
+	margin: auto;
+	margin-top: 5%;
 }
 
 .center{
-width: 50%;
-margin: auto;
-margin-top: 15%;
-border: 6px solid #abd4a9;
-opacity: 0.95;
-background-color: white;
-text-align: center;
-
+	width: 50%;
+	margin: auto;
+	margin-top: 15%;
+	border: 6px solid #abd4a9;
+	opacity: 0.95;
+	background-color: white;
+	text-align: center;
 }
 
 .center p{
@@ -125,11 +135,10 @@ text-align: center;
 }
 
 .topright {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  font-size: 18px;
-
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 18px;
 }
 
 .centerunder {
