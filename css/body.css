@@ -84,6 +84,28 @@ a:focus {
   background-size: cover;
 }
 
+.cirkel{
+	  background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#sarah{
+	background-image: url('/img/sarah.png');
+	background-color: #abd4a9
+}
+
+#felix{
+	background-image: url('/img/felix.png');
+	background-color: #c6cae8
+}
+
+#nicole{
+	background-image: url('/img/nicole.png');
+	background-color: #fddbb8
+}
+
 .center{
 width: 50%;
 margin: auto;
