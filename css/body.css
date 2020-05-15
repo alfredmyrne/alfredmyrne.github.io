@@ -183,7 +183,10 @@ h1 {
 }
 
 .pil {
-  background-image: url('/img/pil.png');
+  background-image: url('/img/pil_scaled.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+
 }
 .demo-2 a {
 	color: #7cc576;
