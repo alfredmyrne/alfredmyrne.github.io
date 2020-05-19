@@ -124,6 +124,7 @@ a:focus {
   background-color: white;
 }
 
+
 /* Character styling IDs */
 #sara {
   background-image: url("/img/profilbild/sara-pb.png");
@@ -178,19 +179,31 @@ a:focus {
   margin-top: 5%;
 }
 
-.center {
-  width: 50%;
-  margin: auto;
-  margin-top: 10%;
-  border: 6px solid #abd4a9;
-  opacity: 0.95;
-  background-color: white;
-  text-align: center;
+.center{
+	width: 50%;
+	margin: auto;
+	margin-top: 7.5%;
+	border: 10px solid #abd4a9;
+	opacity: 0.95;
+	background-color: white;
+	text-align: center;
 }
 
-.center p {
-  padding-left: 5%;
-  padding-right: 5%;
+#nicoleSnake {
+background-image: url(img\pilar\nicole.png);
+}
+
+#felixSnake {
+background-image: url(img\pilar\felix.png);
+}
+
+#saraSnake {
+background-image: url(img\pilar\sara.png);
+}
+
+.center p{
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 h1 {
@@ -205,15 +218,9 @@ h1 {
 }
 
 .centerunder {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 25%;
-  padding-top: 3%;
-  text-align: center;
-}
-
-.row > .column {
-  padding: 0 8px;
+	width: 50%;
+	margin: auto;
+	text-align: center;
 }
 
 .row:after {
