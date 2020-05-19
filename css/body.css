@@ -111,35 +111,53 @@ a:focus {
 }
 
 .cirkel {
-	background: lightblue;
-    border-radius: 50%;
+    background: none;
     width: 240px;
     height: 240px;
 }
 
+.cirkel:active {
+  background-image: none;
+  background-color: white;
+}
+
 /* Character styling IDs */
-#sarah {
-	background-image: url('/img/sarah.jpg');
+#sara {
+	background-image: url('/img/profilbild/sara-pb.png');
 	background-repeat: no-repeat;
-  	background-size: cover;
-	border: 6px solid #abd4a9;
+  background-size: cover;
+	border: 6px;
 
 }
 
+  #sara:hover {
+  border: 8px;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/sara-pb.png');
+}
+
 #felix {
-	background-image: url('/img/felix.jpg');
+	background-image: url('/img/profilbild/felix-pb.png');
 	background-repeat: no-repeat;
-  	background-size: cover;
+  background-size: cover;
 	border: 6px solid #c6cae8;
 	float: right;
 }
 
-#nicole {
-	background-image: url('/img/nicole.jpg');
-	background-repeat: no-repeat;
-  	background-size: cover;
-	border: 6px solid #fddbb8;
+  #felix:hover {
+border: 8px;
+background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/felix-pb.png');
+}
 
+#nicole {
+	background-image: url('/img/profilbild/nicole-pb.png');
+	background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#nicole:hover {
+border: 8px;
+background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/nicole-pb.png');
 }
 
 .characterBox {
@@ -341,6 +359,19 @@ h1 {
 	font-size: 1em;
 	margin: 0;
 	padding: .5em;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* cards wrapper and close btn */

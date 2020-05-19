@@ -1,11 +1,11 @@
 # Site settings
 title: projekt wip
-description: zoot zonkad
-keywords: Modern, Blogging, Fun
-author: Guy De Bored
+description: En sida för projektet och filmen.
+keywords: Challenge,
+author: Alfred Myrne, Axel Ahlin
 repository: alfredmyrne/alfredmyrne.github.io
 #baseurl: "" # the subpath of your site, e.g. /blog/
 url: "alfredmyrne.github.io" # the base hostname & protocol for your site
 plugins: [jekyll-paginate,jekyll-seo-tag,jekyll-sitemap]
-paginate: 3
-google_analytics: 'UA-XXXXXXX-X'
+paginate:
+paginate_path: "/blog/page:num/"

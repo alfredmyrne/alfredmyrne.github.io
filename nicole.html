@@ -19,10 +19,41 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="css/body.css" />
     <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
   </head>
-  
-  <body>
-    <h1>Nicole</h1>
 
+  <body>
+    <div class="wrapper">
+        {% for post in posts.nicole %} <!-- Här ändrar vi direktoriet till paginator.nicole eller dylikt !-->
+        <div class="card" data-id="{{ post.id }}">
+            <div class="card__container card__container--closed"> <!-- är detta animationen? isåfall om vi ska behålla eller ändra !-->
+                <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500"
+                     preserveAspectRatio="xMidYMid slice">
+                    <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
+                           xlink:href="posts/{{ post.image }}"></image>
+                </svg>
+                <div class="card__content">
+                    <div class="card__copy">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- /cards -->
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/vendors/trianglify.min.js"></script>
+    <script src="js/vendors/TweenMax.min.js"></script>
+    <script src="js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="js/vendors/cash.min.js"></script>
+    <script src="js/Card-circle.js"></script>
+    <script src="js/modern-blog.js"></script>
   </body>
 </html>
