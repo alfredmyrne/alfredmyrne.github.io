@@ -1,119 +1,121 @@
 @font-face {
-    font-family: sarahFont;
-	src: url('../fonts/font-awesome/fonts/HoneyScript-Light.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: sarahFont;
+  src: url("../fonts/font-awesome/fonts/HoneyScript-Light.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: nicoleFont;
-	src: url('../fonts/font-awesome/fonts/newfrench.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: nicoleFont;
+  src: url("../fonts/font-awesome/fonts/newfrench.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: felixFont;
-	src: url('../fonts/font-awesome/fonts/Signatura Monoline.ttf')format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: felixFont;
+  src: url("../fonts/font-awesome/fonts/Signatura Monoline.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: headerFont;
-	src: url('../fonts/font-awesome/fonts/OratorStd.otf')format('opentype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: headerFont;
+  src: url("../fonts/font-awesome/fonts/OratorStd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: breadFont;
-	src: url('../fonts/font-awesome/fonts/Gotham-Book.otf')format('opentype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: breadFont;
+  src: url("../fonts/font-awesome/fonts/Gotham-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 *,
 *:after,
 *:before {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearfix:before,
 .clearfix:after {
-	content: '';
-	display: table;
+  content: "";
+  display: table;
 }
 
 .clearfix:after {
-	clear: both;
+  clear: both;
 }
 
 body {
-	font-family: 'breadFont', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	color: #3b393d;
-	background: #f0f0f0;
-	background-image: url('/img/background.png');
-	margin: 0;
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: "breadFont", "Helvetica Neue", "Lato", "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+  color: #3b393d;
+  background: #f0f0f0;
+  background-image: url("/img/background.png");
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-	height: 100%;
-	margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 body.body--hidden {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 body.body--hidden .codrops-header,
 body.body--hidden .content--related {
-	opacity: 0;
+  opacity: 0;
 }
 
 .codrops-header,
 .content--related {
-	-webkit-transition: opacity 300ms ease-in-out;
-	transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 a {
-	text-decoration: none;
-	color: #de6551;
-	outline: none;
+  text-decoration: none;
+  color: #de6551;
+  outline: none;
 }
 
 a:hover,
 a:focus {
-	color: #3b393d;
+  color: #3b393d;
 }
 
 .bg {
-	background-image: url('/img/background.png');
+  background-image: url("/img/background.png");
 
-	/* Full height */
-	height: 100%;
-		margin: 0;
+  /* Full height */
+  height: 100%;
+  margin: 0;
 
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cirkel {
-    background: none;
-    width: 240px;
-    height: 240px;
+  background: none;
+  width: 240px;
+  height: 240px;
 }
 
 .cirkel:target {
@@ -124,246 +126,273 @@ a:focus {
 
 /* Character styling IDs */
 #sara {
-	background-image: url('/img/profilbild/sara-pb.png');
-	background-repeat: no-repeat;
+  background-image: url("/img/profilbild/sara-pb.png");
+  background-repeat: no-repeat;
   background-size: cover;
-	border: 6px;
-
+  border: 6px;
 }
 
-  #sara:hover {
+#sara:hover {
   border: 8px;
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/sara-pb.png');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/img/profilbild/sara-pb.png");
 }
 
 #felix {
-	background-image: url('/img/profilbild/felix-pb.png');
-	background-repeat: no-repeat;
+  background-image: url("/img/profilbild/felix-pb.png");
+  background-repeat: no-repeat;
   background-size: cover;
-	float: right;
+  float: right;
 }
 
-  #felix:hover {
-border: 8px;
-background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/felix-pb.png');
+#felix:hover {
+  border: 8px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/img/profilbild/felix-pb.png");
 }
 
 #nicole {
-	background-image: url('/img/profilbild/nicole-pb.png');
-	background-repeat: no-repeat;
+  background-image: url("/img/profilbild/nicole-pb.png");
+  background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #nicole:hover {
-border: 8px;
-background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/img/profilbild/nicole-pb.png');
+  border: 8px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/img/profilbild/nicole-pb.png");
 }
 
 .characterBox {
-	width: 50%;
-	margin: auto;
-	margin-top: 5%;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
 }
 
-.center{
-	width: 50%;
-	margin: auto;
-	margin-top: 10%;
-	border: 6px solid #abd4a9;
-	opacity: 0.95;
-	background-color: white;
-	text-align: center;
+.center {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  border: 6px solid #abd4a9;
+  opacity: 0.95;
+  background-color: white;
+  text-align: center;
 }
 
-.center p{
-	padding-left: 5%;
-	padding-right: 5%;
+.center p {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 h1 {
-	font-family: 'headerFont', Arial, Helvetica, sans-serif;
+  font-family: "headerFont", Arial, Helvetica, sans-serif;
 }
 
 .topright {
-	position: absolute;
-	top: 5%;
-	right: 5%;
-	font-size: 18px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 18px;
 }
 
 .centerunder {
-	width: 50%;
-	margin: auto;
-	margin-bottom: 25%;
-	padding-top: 3%;
-	text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 25%;
+  padding-top: 3%;
+  text-align: center;
 }
 
+.row > .column {
+  padding: 0 8px;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 17%;
+}
+
+.rows {
+	margin-top: 5%;
+}
+
+/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: hsla(0, 0%, 100%, 0.8);
 }
 
-
+/* Modal Content */
 .modal-content {
+  position: relative;
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  max-width: 1200px;
 }
-
 
 .pil {
-  background-image: url('/img/pil_scaled.png');
+  background-image: url("/img/pil_scaled.png");
   background-repeat: no-repeat;
   background-size: auto;
-
 }
 
 .hidden {
-	position: absolute;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
 }
 /* Header */
 
 .codrops-header {
-	padding: 2em 1em;
-	text-align: center;
+  padding: 2em 1em;
+  text-align: center;
 }
 
 .codrops-header h1 {
-	font-size: 2.25em;
-	font-weight: 400;
-	line-height: 1.2;
-	margin: .5em 0 0;
+  font-size: 2.25em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0.5em 0 0;
 }
 
 .codrops-header h1 span {
-	font-size: .45em;
-	display: block;
-	padding: .5em 0 1em;
-	color: #999;
+  font-size: 0.45em;
+  display: block;
+  padding: 0.5em 0 1em;
+  color: #999;
 }
 /* Top Navigation Style */
 
 .codrops-links {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .codrops-links::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 2px;
-	height: 100%;
-	margin-left: -1px;
-	background: #ddd;
-	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
-	transform: rotate3d(0, 0, 1, 22.5deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: #ddd;
+  -webkit-transform: rotate3d(0, 0, 1, 22.5deg);
+  transform: rotate3d(0, 0, 1, 22.5deg);
 }
 
-
 .codrops-icon {
-	display: inline-block;
-	width: 1.5em;
-	margin: .5em;
-	padding: 0em 0;
-	text-decoration: none;
+  display: inline-block;
+  width: 1.5em;
+  margin: 0.5em;
+  padding: 0em 0;
+  text-decoration: none;
 }
 
 .codrops-icon span {
-	display: none;
+  display: none;
 }
 
 .codrops-icon:before {
-	font-family: 'codropsicons';
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 1;
-	margin: 0 5px;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
+  font-family: "codropsicons";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  margin: 0 5px;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
 
-	speak: none;
+  speak: none;
 }
 
 .codrops-icon--drop:before {
-	content: '\e001';
+  content: "\e001";
 }
 
 .codrops-icon--prev:before {
-	content: '\e004';
+  content: "\e004";
 }
 /* Demo links */
 
 .codrops-demos {
-	margin: 2em 0 0;
+  margin: 2em 0 0;
 }
 
 .codrops-demos a {
-	display: inline-block;
-	margin: 0 .5em;
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 .codrops-demos a.current-demo {
-	font-weight: bold;
-	color: #3b393d;
+  font-weight: bold;
+  color: #3b393d;
 }
 /* Content */
 
 .content {
-	padding: 1em 0 4em;
+  padding: 1em 0 4em;
 }
 /* Related demos */
 
 .content--related {
-	font-weight: bold;
-	text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 .media-item {
-	display: inline-block;
-	padding: 1em;
-	vertical-align: top;
-	-webkit-transition: color .3s;
-	transition: color .3s;
+  display: inline-block;
+  padding: 1em;
+  vertical-align: top;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .media-item__img {
-	max-width: 100%;
-	opacity: .3;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
+  max-width: 100%;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .media-item:hover .media-item__img,
 .media-item:focus .media-item__img {
-	opacity: 1;
+  opacity: 1;
 }
 
 .media-item__title {
-	font-size: 1em;
-	margin: 0;
-	padding: .5em;
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5em;
 }
 
 .videoWrapper {
@@ -382,21 +411,21 @@ h1 {
 /* cards wrapper and close btn */
 
 .wrapper {
-	overflow: auto;
-	width: 95%;
-	max-width: 1366px;
-	margin: 0 auto;
+  overflow: auto;
+  width: 95%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 50em) {
-	.codrops-header {
-		padding: 3em 10% 4em;
-	}
+  .codrops-header {
+    padding: 3em 10% 4em;
+  }
 }
 
 @media screen and (max-width: 40em) {
-	.codrops-header h1 {
-		font-size: 2.4em;
-		line-height: 1.2;
-	}
+  .codrops-header h1 {
+    font-size: 2.4em;
+    line-height: 1.2;
+  }
 }

@@ -19,24 +19,85 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="css/body.css" />
     <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="stylesheet" type="text/css" href="css/pattern.css" />
-    <link rel="stylesheet" type="text/css" href="css/modal.css" />
-
   </head>
 
   <body>
-
-  <button id="myBtn">Open Modal</button>
-
-
-  <div id="myModal" class="modal">
-
-    <div class="modal-content">
-      <span class="close"></span>
-<img src="img/nicole/NICOLE-1.png" alt="nic1">
+    <div class="rows">
+    <div class="row">
+      <div class="column">
+        <img
+          src="img/nicole/NICOLE-1.png"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img/nicole/NICOLE-2.png"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img/nicole/NICOLE-3.png"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="img/nicole/NICOLE-4.png"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor"
+        />
+      </div>
     </div>
 
+    <div class="row">
+      <div class="column">
+        <img
+          src="img/nicole/NICOLE-5.png"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(5)"
+          class="hover-shadow cursor"
+        />
+      </div>
+    </div>
   </div>
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="img/nicole/NICOLE-1.png" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides">
+          <img src="img/nicole/NICOLE-2.png" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides">
+          <img src="img/nicole/NICOLE-3.png" style="width: 100%;" />
+        </div>
+
+        <div class="mySlides">
+          <img
+            src="img/nicole/NICOLE-4.png"
+            style="width: 100%;"
+          />
+        </div>
+        <div class="mySlides">
+          <img
+            src="img/nicole/NICOLE-5.png"
+            style="width: 100%;"
+          />
+        </div>
+      </div>
+    </div>
 
     <script src="js/vendors/trianglify.min.js"></script>
     <script src="js/vendors/TweenMax.min.js"></script>
