@@ -200,8 +200,8 @@ a:focus {
 .snake{
   position: absolute;
   min-width: 300px;
-  top: -7%;
-  left: -9%;
+  top: -40px;
+  left: -240px;
   z-index: 0;
 }
 
@@ -248,16 +248,34 @@ h1 {
 .column {
   position: relative;
   float: left;
-  width: 17%;
+  width: 15%;
 }
 
 .rows {
   position: relative;
   height: 100%;
   width: 100%;
-	margin-top: 12.5%;
+	margin-top: 6%;
   margin-left: 12.5%;
 }
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
 /* att gÖRA: i class "row" lägga till z index 1 */
 /* The Modal (background) */
 .modal {
