@@ -114,8 +114,8 @@ a:focus {
 
 .cirkel {
   background: none;
-  width: 240px;
-  height: 240px;
+  width: 360px;
+  height: 360px;
 }
 
 .cirkel:target {
@@ -127,6 +127,7 @@ a:focus {
 
 /* Character styling IDs */
 #sara {
+  left: 12.5%;
   background-image: url("/img/profilbild/sara-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,6 +190,14 @@ a:focus {
 	text-align: center;
 }
 
+.snake{
+  position: absolute;
+  min-width: 300px;
+  top: -7%;
+  left: -9%;
+  z-index: 0;
+}
+
 #nicoleSnake {
 background-image: url(img\pilar\nicole.png);
 }
@@ -230,14 +239,19 @@ h1 {
 }
 
 .column {
+  position: relative;
   float: left;
   width: 17%;
 }
 
 .rows {
-	margin-top: 5%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+	margin-top: 12.5%;
+  margin-left: 12.5%;
 }
-
+/* att gÖRA: i class "row" lägga till z index 1 */
 /* The Modal (background) */
 .modal {
   display: none;
@@ -257,7 +271,7 @@ h1 {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
+  padding-bottom: 5%;
   width: 40%;
   max-width: 1200px;
 }
