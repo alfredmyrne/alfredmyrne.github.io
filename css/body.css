@@ -260,20 +260,19 @@ h1 {
 }
 
 .thumbnail {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
+  position:relative;
+  width:360px;
+  height:360px;
+  overflow:hidden;
 }
 .thumbnail img {
   position: absolute;
-  left: 50%;
+  margin: -50px -50px;
+  /* left: 50%;
   top: 50%;
-  height: 100%;
-  width: auto;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%); */
 }
 
 /* att gÖRA: i class "row" lägga till z index 1 */
