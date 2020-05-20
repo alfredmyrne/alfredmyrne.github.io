@@ -113,6 +113,7 @@ a:focus {
 }
 
 .cirkel {
+  position:absolute;
   background: none;
   width: 360px;
   height: 360px;
@@ -127,11 +128,11 @@ a:focus {
 
 /* Character styling IDs */
 #sara {
-  left: 12.5%;
   background-image: url("/img/profilbild/sara-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 6px;
+  top: -320px;
+  left: 0px;
 }
 
 #sara:hover {
@@ -147,11 +148,11 @@ a:focus {
   background-image: url("/img/profilbild/felix-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  float: right;
+  top: -320px;
+  left: 640px;
 }
 
 #felix:hover {
-  border: 8px;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -163,6 +164,7 @@ a:focus {
   background-image: url("/img/profilbild/nicole-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
+  left: 310px;
 }
 
 #nicole:hover {
@@ -172,12 +174,17 @@ a:focus {
       rgba(255, 255, 255, 0.5)
     ),
     url("/img/profilbild/nicole-pb.png");
+
 }
 
 .characterBox {
-  width: 50%;
-  margin: auto;
-  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  margin-top: 25%;
+  margin-left: 22.5%;
 }
 
 .center{
