@@ -197,6 +197,11 @@ a:focus {
 	text-align: center;
 }
 
+#bigger {
+  width:65%;
+  margin-top: 9%;
+}
+
 .snake{
   position: absolute;
   min-width: 300px;
@@ -226,12 +231,26 @@ h1 {
   font-family: "headerFont", Arial, Helvetica, sans-serif;
 }
 
+a {
+  font-family: "headerFont", Arial, Helvetica, sans-serif;
+}
+
 .topright {
   position: absolute;
   top: 5%;
   right: 5%;
-  font-size: 18px;
+  font-size: 36px;
+  text-align: center;
+  display:block;
 }
+#trLeft {
+  right: 17.5%;
+}
+
+#trMoreLeft {
+  right: 40%;
+}
+
 
 .centerunder {
 	width: 50%;
@@ -267,7 +286,7 @@ h1 {
 }
 .thumbnail img {
   position: absolute;
-  margin: -50px -50px;
+  margin: -50px -25px 25px 25px;
   /* left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -466,6 +485,8 @@ h1 {
   .codrops-header {
     padding: 3em 10% 4em;
   }
+
+
 }
 
 @media screen and (max-width: 40em) {
