@@ -126,7 +126,7 @@ a:focus {
 }
 
 
-/* Character styling IDs */
+/* Character styling IDs for circles*/
 #sara {
   background-image: url("/img/profilbild/sara-pb.png");
   background-repeat: no-repeat;
@@ -313,8 +313,27 @@ a {
   background-color: #fefefe;
   margin: auto;
   padding-bottom: 5%;
-  width: 40%;
+  width: 32%;
   max-width: 1200px;
+}
+.mySlides {
+  text-align: center;
+}
+.mySlides video {
+  margin-top: 40px;
+}
+
+/* Border styling ids */
+#borderNicole {
+  border: 2px solid #fddbb8;
+}
+
+#borderSara {
+  border: 2px solid #abd4a9;
+}
+
+#borderFelix {
+  border: 2px solid #c6cae8;
 }
 
 .pil {
