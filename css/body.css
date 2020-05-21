@@ -510,19 +510,64 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 50em) {
-  .codrops-header {
-    padding: 3em 10% 4em;
-  }
+/* Mobile Support */
 
+@media screen and (max-width: 50em) {
+
+  .snake {
+    display: none;
+  }
+  .characterBox {
+    margin-left: 0;
+    margin-top: 30vh;
+  }
+  .cirkel {
+    display: inline-block;
+  }
+  #sara {
+    left: -10px;
+
+  }
+  #felix {
+    left: 25px;
+    top: -5vh;
+    z-index: 0;
+  }
+  #nicole {
+    left: 0px;
+    bottom: -75vh;
+    right:35px;
+    z-index: 1;
+
+  }
 
 }
 
 @media screen and (max-width: 40em) {
-  .codrops-header h1 {
-    font-size: 2.4em;
-    line-height: 1.2;
+  .snake {
+    display: none;
   }
+  .characterBox {
+    margin-left: 0;
+    margin-top: 30vh;
+  }
+  .cirkel {
+    display: inline-block;
+  }
+  #sara {
+    left: -10px;
+
+  }
+  #felix {
+    left: 25px;
+    top: -5vh;
+    z-index: 0;
+  }
+  #nicole {
+    left: 0px;
+    bottom: -75vh;
+    right:35px;
+    z-index: 1;
 }
 
 @media screen and (min-resolution: 120dpi) { 
