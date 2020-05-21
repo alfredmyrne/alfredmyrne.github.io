@@ -282,7 +282,7 @@ a {
 .thumbnail {
   position:relative;
   width:17%;
-  height:350px;
+  height:200px;
   overflow:hidden;
   border: 2px solid #abd4a9;
 }
