@@ -589,6 +589,11 @@ a {
   .cirkel {
     display: inline-block;
   }
+
+  .column {
+    width: 15%;
+  }
+
   #sara {
     left: -10px;
 
