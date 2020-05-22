@@ -294,14 +294,14 @@ a {
 
 /* Thumbnail stylings tiktok */
 
-.vidthumbnail {
+.chatthumbnail {
   position:relative;
   height:200px;
   overflow:hidden;
 }
 
 
-.vidthumbnail video {
+.chatthumbnail video {
   position: absolute;
   margin: 0px 0 0 0px;
   transform: scale(2);
