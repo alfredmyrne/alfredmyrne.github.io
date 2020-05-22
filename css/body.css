@@ -281,6 +281,10 @@ a {
   margin-bottom: 10%;
 }
 
+#saraRows {
+  margin-top:7.5%;
+}
+
 .thumbnail {
   position:relative;
   height:200px;
@@ -292,7 +296,7 @@ a {
   transform: scale(1.8);
 }
 
-/* Thumbnail stylings tiktok */
+/* Thumbnail stylings chats + tiktok */
 
 .chatthumbnail {
   position:relative;
@@ -305,6 +309,21 @@ a {
   position: absolute;
   margin: 0px 0 0 0px;
   transform: scale(2);
+  top: 120px;
+  left: -65px;
+
+}
+
+.tiktokthumbnail {
+  position:relative;
+  height:200px;
+  overflow:hidden;
+}
+
+.tiktokthumbnail video {
+  position: absolute;
+  margin: 0px 0 0 0px;
+  transform: scale(1.4);
   top: 120px;
   left: -65px;
 
