@@ -293,8 +293,20 @@ a {
 }
 
 /* Thumbnail stylings tiktok */
-#tikTokThumb {
-  left: -15px;
+
+.vidthumbnail {
+  position:relative;
+  height:200px;
+  overflow:hidden;
+}
+
+
+.vidthumbnail video {
+  position: absolute;
+  margin: 0px 0 0 0px;
+  transform: scale(2);
+  top: 120px;
+  left: -65px;
 
 }
 /* The Modal (background) */
@@ -337,7 +349,7 @@ a {
 }
 
 #borderFelix {
-  border: 2px solid #c6cae8;
+  border: 4px solid #c6cae8;
 }
 
 .pil {
