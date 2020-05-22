@@ -243,14 +243,30 @@ a {
   text-align: center;
   display:block;
 }
+
+#trLessTop {
+  top:2.5%;
+}
+
 #trLeft {
   right: 17.5%;
+}
+
+#pTopRight {
+  position: absolute;
+  right: 110%;
+  bottom: -5%;
+}
+
+#pTopRight2 {
+  position: absolute;
+  right: 110%;
+  bottom: 7.5%;
 }
 
 #trMoreLeft {
   right: 40%;
 }
-
 
 .centerunder {
 	width: 50%;
@@ -324,7 +340,7 @@ a {
   position: absolute;
   margin: 0px 0 0 0px;
   transform: scale(1.2);
-  top: 120px;
+  top: 6px;
   left: -65px;
 
 }
