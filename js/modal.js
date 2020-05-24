@@ -38,15 +38,22 @@ window.addEventListener("click", function (event) {
     closeModal();
   } else if (event.target.tagName.toLowerCase() == "img" && modal.style.display === "none") {
     closeModal();
+  } else {
+    openModal();
   }
+
+  if (event.target.tagName.toLowerCase() === "video"){
+    event.target.play();
+  }
+
 });
 
 function closeModal() {
   modal.style.display = "none";
   
   if (document.querySelector("video").playing) {
-    alert("hello");
     //stop video
+    this.pause();
   }
 }
 
