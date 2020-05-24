@@ -339,9 +339,9 @@ a {
 .tiktokthumbnail video {
   position: absolute;
   margin: 0px 0 0 0px;
-  transform: scale(1.2);
-  top: 6px;
-  left: -65px;
+  transform: scale(1.6);
+  bottom: 50px;
+  left: 0px;
 
 }
 /* The Modal (background) */
@@ -363,7 +363,6 @@ a {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding-bottom: 5%;
   width: 32%;
   max-width: 1200px;
 }
