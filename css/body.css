@@ -115,8 +115,8 @@ a:focus {
 .cirkel {
   position:absolute;
   background: none;
-  width: 360px;
-  height: 360px;
+  width: 22.5em;
+  height: 22.5em;
 }
 
 .cirkel:target {
@@ -131,8 +131,8 @@ a:focus {
   background-image: url("/img/profilbild/sara-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  top: -320px;
-  left: 0px;
+  top: -20em;
+  left: 0em;
 }
 
 #sara:hover {
@@ -148,8 +148,8 @@ a:focus {
   background-image: url("/img/profilbild/felix-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  top: -320px;
-  left: 640px;
+  top: -20em;
+  left: 40em;
 }
 
 #felix:hover {
@@ -164,7 +164,7 @@ a:focus {
   background-image: url("/img/profilbild/nicole-pb.png");
   background-repeat: no-repeat;
   background-size: cover;
-  left: 310px;
+  left: 19.375em;
 }
 
 #nicole:hover {
@@ -204,7 +204,7 @@ a:focus {
 
 .snake{
   position: absolute;
-  min-width: 300px;
+  min-width: 18.75em;
   top: 5vh;
   left: -7.5vw;
   z-index: 0;
@@ -303,7 +303,7 @@ a {
 
 .thumbnail {
   position:relative;
-  height:200px;
+  height:12.5em;
   overflow:hidden;
 }
 .thumbnail img {
@@ -316,7 +316,7 @@ a {
 
 .chatthumbnail {
   position:relative;
-  height:200px;
+  height:12.5em;
   overflow:hidden;
 }
 
@@ -325,14 +325,14 @@ a {
   position: absolute;
   margin: 0px 0 0 0px;
   transform: scale(2);
-  top: 120px;
-  left: -65px;
+  top: 7.5em;
+  left: -4em;
 
 }
 
 .tiktokthumbnail {
   position:relative;
-  height:200px;
+  height:12.5em;
   overflow:hidden;
 }
 
@@ -340,8 +340,8 @@ a {
   position: absolute;
   margin: 0px 0 0 0px;
   transform: scale(1.6);
-  bottom: 50px;
-  left: 0px;
+  bottom: 3.125em;
+  left: 0em;
 
 }
 /* The Modal (background) */
@@ -363,8 +363,8 @@ a {
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  width: 32%;
-  max-width: 1200px;
+  width: 40%;
+  max-width: 200em;
 }
 .mySlides {
   text-align: center;
