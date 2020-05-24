@@ -30,6 +30,9 @@ function openModal() {
 
   //if modal box not open -> dont play video (right click and play)
 }
+var videoIndex = -1;
+var thumbNailVids = vids.length / 2;
+
 
 window.addEventListener("click", function (event) {
   if (event.target == modal) {
@@ -43,7 +46,8 @@ window.addEventListener("click", function (event) {
   }
 
   if (event.target.tagName.toLowerCase() === "video"){
-    event.target.play();
+    videoIndex = event.target.getAttribute('id');
+    vids[videoIndex+thumbNailVids-1].play();
   }
 
 });
