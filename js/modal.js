@@ -43,7 +43,7 @@ window.addEventListener("click", function (event) {
 
 function closeModal() {
   modal.style.display = "none";
-  
+
   if (document.querySelector("video").playing) {
     alert("hello");
     //stop video
@@ -81,8 +81,5 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 
-  var elem = slides[slideIndex - 1].querySelector("video"); //first child of current slide
-  if (elem) {
-    elem.play();
-  }
+
 }

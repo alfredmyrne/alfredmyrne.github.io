@@ -126,6 +126,17 @@ a:focus {
 }
 
 
+/* knapp för diskussionsidan */
+.knapp {
+  border: 2px solid #abd4a9;
+  background-color: white;
+}
+
+.knapp:hover {
+  background-color: #abd4a9;
+  color: white;
+}
+
 /* Character styling IDs for circles*/
 #sara {
   background-image: url("/img/profilbild/sara-pb.png");
@@ -188,6 +199,7 @@ a:focus {
 }
 
 .center{
+  position: relative;
 	width: 50%;
 	margin: auto;
 	margin-top: 7.5%;
@@ -204,26 +216,28 @@ a:focus {
 
 .snake{
   position: absolute;
-  min-width: 18.75em;
+  width: 100%;
   top: 5vh;
   left: -7.5vw;
+
   z-index: 0;
 }
 
-#nicoleSnake {
-}
 
-#felixSnake {
-background-image: url(img\pilar\felix.png);
-}
-
-#saraSnake {
-background-image: url(img\pilar\sara.png);
+.snake img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .center p{
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+.center#omOss{
+  position: relative;
+  z-index: -1;
 }
 
 h1 {
@@ -239,7 +253,7 @@ a {
   position: absolute;
   top: 5%;
   right: 5%;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   display:block;
 }
@@ -265,11 +279,24 @@ a {
 }
 
 #trMoreLeft {
+  position: absolute;
   right: 40%;
 }
 
+/* Im sorry its late todo just one class for all this text sh*t */
+#FackItLeft {
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  top: 0.2em;
+  left: 8em;
+  display:block;
+}
+
 .centerunder {
-	width: 50%;
+  position: relative;
+  padding-left: 16em;
+  width: 50%;
 	margin: auto;
 	text-align: center;
 }

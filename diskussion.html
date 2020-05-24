@@ -18,9 +18,100 @@
   </head>
 
   <body>
-    <div class="center">
-        <h1>Diskussion</h1>
-        <p> hur ska det se ut? </p>
+    <div id="info" class="center">
+        <h1>Instruktioner</h1>
+        <p>
+
+Hela klassen tar del av trailer på förstasidan. Dela sedan in klassen i tre grupper och låt dem
+ta del av antingen karaktären Nicole, Felix eller Sara. Grupperna väljer karaktär genom att
+klicka på hens bild på sida 2. Där får barnen ta del av just den personens sociala medier och
+chattar. Efter det ser alla filmen på sida 3. När det är gjort får alla gå tillbaka till sida 2 för att
+ta del av de andra karaktärernas sidor. Efter det sker en diskussion i helklass med hjälp av
+diskussionsunderlaget (se nedan). Gå då tillbaka till denna sida för att ta del av det.
+
+</p>
+
+<h1>Diskussionsunderlag</h1>
+  <p>
+  Spontana reaktioner? <br>
+  Vad fick filmen er att känna?
+  Varför agerar Nicole som hon gör?<br>
+  Varför agerar Sara som hon gör?<br>
+  Varför agerar Felix som han gör?<br>
+  Hur tänker ni att sociala medier påverkar deras agerande?<br>
+  Vad tänker ni är budskapet med filmen?<br>
+  Vad tänker ni om slutet?<br>
+  Hur hade dem kunnat agera annorlunda?<br>
+  Varför gör de något som de vet är farligt?<br>
+  Hur hade du själv gjort i situationen?<br>
+  Hur förändrades din uppfattning om situationen och personerna efter att ha tagit del av de
+  andra karaktärernas sidor?<br>
+  Har du större förståelse för varför de andra personerna agerar som de gör när du tagit del av
+  allas sidor? På vilket sätt?<br>
+  Vem bär mest skuld till det här?<br>
+
+</p>
+
+</div>
+
+<div class="topright knapp" onclick="klickaUpp()">
+Om Oss
+</div>
+
+<div  id="omOss" class="center">
+<br>
+Vi som gjort detta projekt studerar på Stockholms Konstnärliga Högskola. Projektet är
+sprunget ur temat verkligt/overkligt. Baserat på det har vi har gjort research hos en skolklass
+där fick chans att intervjua dem. Utifrån det tog projektet form och landade i en den här
+upplevelsen som hemsidan erbjuder. <br>
+Produktionsteam<br>
+<b>Manus</b><br>
+Agnes Jeppsson <br>
+<b>Regi </b> <br>
+Alireza Teimori<br>
+<b>Producent </b> <br>
+Tove Myrne Widfors <br>
+<b>Foto </b> <br>
+Filip Stankovic <br>
+<b>Skådespelare </b> <br>
+Inés Cherif <br>
+Klara Hodell Risberg <br>
+Oliver Andersson <br>
+<b>Klipp </b> <br>
+Moa Nyberg Waller <br>
+<b>Ljudtekniker och Ljuddesign </b> <br>
+Tove Lidman <br>
+<b>Kompositör </b> <br>
+Adam Bejstam <br>
+<b>Drönaroperatör</b> <br>
+Simon Heins <br>
+<b>Grafisk designer hemsida</b> <br>
+Lisa Dahlgren <br>
+<b>Programmerare hemsida</b> <br>
+Alfred Myrne Blåder <br>
+Axel Ahlin <br>
+<b>Trailer</b> <br>
+Bella Gavelin <br>
     </div>
+
+    <script>
+function klickaUpp() {
+  var y = document.getElementById("info");
+  var x = document.getElementById("omOss");
+
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+  //
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+
+}
+</script>
   </body>
 </html>
