@@ -11,24 +11,46 @@ function stopAllVids() {
   }
 }
 
+//def. of whether or not a video is playing
+Object.defineProperty(HTMLMediaElement.prototype, "playing", {
+  get: function () {
+    return !!(
+      this.currentTime > 0 &&
+      !this.paused &&
+      !this.ended &&
+      this.readyState > 2
+    );
+  },
+});
+
 stopAllVids();
 
 function openModal() {
   modal.style.display = "block";
+
+  //if modal box not open -> dont play video (right click and play)
 }
 
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
-    //stopAllVids();
-  } else if ($(event.target).hasClass('mySlides')) {
-    modal.style.display = "none";
+    closeModal();
+    //this.alert(1)
+  } else if ($(event.target).hasClass("modal-content")) {
+    closeModal();
+    //this.alert(2)
+  } else if (event.target.tagName.toLowerCase() == "img" && modal.style.display === "block") {
+    closeModal();
+    //this.alert(3)
   }
-
 });
 
 function closeModal() {
   modal.style.display = "none";
+
+  if (document.querySelector("video").playing) {
+    alert("hello");
+    //stop video
+  }
 }
 
 var slideIndex = 1;
