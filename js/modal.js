@@ -1,23 +1,31 @@
 var modal = document.getElementById("myModal");
 var slides = document.getElementsByClassName("mySlides");
+
 var vids = document.getElementsByTagName("video");
 
-for (var i = 0; i < vids.length; i++) {
-  vids[i].currentTime = 0;
-  vids[i].pause();
+function stopAllVids() {
+  //Because fuck autoplay
+  for (var i = 0; i < vids.length; i++) {
+    vids[i].currentTime = 0;
+    vids[i].pause();
+  }
 }
+
+stopAllVids();
 
 function openModal() {
   modal.style.display = "block";
 }
 
-window.onclick = function (event) {
+window.addEventListener("click", function(event) {
   if (event.target == modal) {
+    modal.style.display = "none";
+    //stopAllVids();
+  } else if ($(event.target).hasClass('mySlides')) {
     modal.style.display = "none";
   }
 
-  video.currentTime = 0;
-};
+});
 
 function closeModal() {
   modal.style.display = "none";
@@ -33,26 +41,6 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
-// function play(n) {
-//   var vid = slides[n].querySelector('video');
-//   vid.play();
-// }
-//
-// function pause(n) {
-//   var vid = slides[n].querySelector('video');
-//   vid.pause();
-// }
-//
-// function isVideo(n) {
-//
-//   var type = slides[n].childNodes[0].tagName.toLowerCase();
-//   if(type === 'video'){
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
 
 function showSlides(n) {
   var i;
