@@ -34,19 +34,16 @@ function openModal() {
 window.addEventListener("click", function (event) {
   if (event.target == modal) {
     closeModal();
-    //this.alert(1)
   } else if ($(event.target).hasClass("modal-content")) {
     closeModal();
-    //this.alert(2)
-  } else if (event.target.tagName.toLowerCase() == "img" && modal.style.display === "block") {
+  } else if (event.target.tagName.toLowerCase() == "img" && modal.style.display === "none") {
     closeModal();
-    //this.alert(3)
   }
 });
 
 function closeModal() {
   modal.style.display = "none";
-
+  alert("hello");
   if (document.querySelector("video").playing) {
     alert("hello");
     //stop video
