@@ -43,7 +43,7 @@ window.addEventListener("click", function (event) {
 
 function closeModal() {
   modal.style.display = "none";
-  alert("hello");
+  
   if (document.querySelector("video").playing) {
     alert("hello");
     //stop video
