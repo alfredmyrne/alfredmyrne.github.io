@@ -66,6 +66,7 @@ body {
   overflow: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  touch-action: none;
 }
 
 html {
@@ -618,7 +619,7 @@ a {
 
 @media screen and (max-width: 50em) {
 
-  .snake {
+  .snake img {
     display: none;
   }
   .characterBox {
