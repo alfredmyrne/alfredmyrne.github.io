@@ -42,13 +42,13 @@ window.addEventListener("click", function (event) {
   } else if (event.target.tagName.toLowerCase() == "img" && modal.style.display === "none") {
     closeModal();
   } else if (event.target.getAttribute('id') == "border" + name){
+
     openModal();
-
+    if (event.target.tagName.toLowerCase() === "video"){
+    event.target.get(0).trigger('play')
+    }
   }
-  if (event.target.tagName.toLowerCase() === "video"){
-    event.target.get(0).trigger('play');
 
-  }
 
 });
 
