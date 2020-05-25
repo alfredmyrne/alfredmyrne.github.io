@@ -43,8 +43,9 @@ function openModal() {
 var videoIndex = -1;
 var thumbNailVids = vids.length / 2;
 var name = document.title;
+var body = document.querySelector('body');
 
-bindEvent(window, "click", function (event) {
+bindEvent(body, "click", function (event) {
   if (event.target == modal) {
     closeModal();
   } else if ($(event.target).hasClass("modal-content")) {
