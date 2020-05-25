@@ -11,6 +11,14 @@ function stopAllVids() {
   }
 }
 
+function bindEvent(el, eventName, eventHandler) {
+  if (el.addEventListener){
+    el.addEventListener(eventName, eventHandler, false);
+  } else if (el.attachEvent){
+    el.attachEvent('on'+eventName, eventHandler);
+  }
+}
+
 //def. of whether or not a video is playing
 Object.defineProperty(HTMLMediaElement.prototype, "playing", {
   get: function () {
@@ -30,11 +38,13 @@ function openModal() {
 
   //if modal box not open -> dont play video (right click and play)
 }
+
+
 var videoIndex = -1;
 var thumbNailVids = vids.length / 2;
 var name = document.title;
 
-window.addEventListener("click", function (event) {
+bindEvent(window, "click", function (event) {
   if (event.target == modal) {
     closeModal();
   } else if ($(event.target).hasClass("modal-content")) {
@@ -44,7 +54,7 @@ window.addEventListener("click", function (event) {
   } else if (event.target.getAttribute('id') == "border" + name){
 
     openModal();
-    if (event.target.tagName.toLowerCase() === "video"){
+    if (event.target.tagName.toLowerCase() == "video"){
     var vid = event.target;
     vid[0].play();
     }
@@ -73,7 +83,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
 
-  var dots = document.getElementsByClassName("demo");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -83,12 +93,9 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+
 
 
 }
