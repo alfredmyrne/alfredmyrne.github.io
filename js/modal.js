@@ -32,7 +32,7 @@ function openModal() {
 }
 var videoIndex = -1;
 var thumbNailVids = vids.length / 2;
-var name = document.getElementById("name").textContent;
+var name = document.title;
 
 window.addEventListener("click", function (event) {
   if (event.target == modal) {
