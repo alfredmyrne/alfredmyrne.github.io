@@ -66,6 +66,7 @@ body {
   overflow: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  touch-action: none;
 }
 
 html {
@@ -216,7 +217,7 @@ a:focus {
 
 #bigger {
   width:65%;
-  margin-top: 20vh;
+  margin-top: 9%;
 }
 
 .snake {
@@ -618,7 +619,7 @@ a {
 
 @media screen and (max-width: 50em) {
 
-  .snake {
+  .snake img {
     display: none;
   }
   .characterBox {
