@@ -45,7 +45,8 @@ window.addEventListener("click", function (event) {
 
     openModal();
     if (event.target.tagName.toLowerCase() === "video"){
-    event.target.get(0).trigger('play')
+    var vid = event.target;
+    vid[0].play();
     }
   }
 

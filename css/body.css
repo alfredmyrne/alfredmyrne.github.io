@@ -445,13 +445,15 @@ a {
 .invisPil {
   position: absolute;
   z-index: 100;
-  bottom: 13px;
-  right: 15px;
-  width: 0;
-  height: 0;
-  border-top: 70px solid transparent;
-  border-bottom: 70px solid transparent;
-  border-left: 120px solid transparent;
+  height: 20vh;
+  width: 10vw;
+    /* width: 0vw; */
+    /* height: 0vw; */
+  bottom: 7vh;
+  right: 6vw;
+    /* border-top: 70px solid transparent; */
+    /* border-bottom: 70px solid transparent; */
+  border-left: 20vw solid transparent;
 }
 
 .hidden {
