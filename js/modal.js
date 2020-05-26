@@ -38,7 +38,12 @@ function openModal() {
 
   //if modal box not open -> dont play video (right click and play)
 }
-
+// 
+// function findVideo() {
+//   for (i = 0; i < vids.length; i++) {
+//     if (vids[i].)
+//   }
+// }
 
 var videoIndex = -1;
 var thumbNailVids = vids.length / 2;
