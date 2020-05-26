@@ -401,6 +401,7 @@ a {
 .modal {
   display: none;
   position: fixed;
+  cursor: pointer;
   z-index: 1;
   padding-top: 100px;
   left: 0;
@@ -418,9 +419,11 @@ a {
   margin: auto;
   width: 40%;
   max-width: 200em;
+  cursor: pointer;
 }
 .mySlides {
   text-align: center;
+  cursor: pointer;
 }
 .mySlides video {
   margin-top: 40px;
